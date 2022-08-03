@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'ubuntu', sans-serif;
+
+
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+
+
+}
+section .title::after{
+    position: absolute;
+    margin-top: 50px;
+    bottom: -9px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 6px;
+    background: #fff;
+    transform: translateX(-50%);
+
+
+}
+
+
+/*navbar styling */
+
+.nav-container{
+    max-width: 1300px;
+    padding: 0  20px 0 10px;
+    margin: auto ;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background: #1C3879;
+    z-index: 999;
+    font-family: 'ubuntu', sans-serif;
+    transition: all 0.3s ease;
+
+}
+.navbar .nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar  .nav-container .logo a{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-decoration: none;
+
+}
+.navbar  .nav-container .logo a span{
+    color: black;
+}
+.navbar .menu li{
+    display: inline-block;
+    margin:  0;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+/*home section styling*/
+.home{
+    background-color: #100F0F;
+    color: #fff;
+    background-image: url("images/971.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 200px;
+}
+.home .home-content{
+    margin: 80px;
+    padding: 20px;
+}
+.home .home-container{
+    margin: auto 0 auto 40px;
+
+
+}
+
+.home .home-container .home-content  .intro-text{
+    color: whitesmoke;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    font-family: 'Dancing Script', cursive;
+
+}
+.home .home-container .home-content  .intro-statement{
+    width: 50%;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    font-family: 'Dancing Script', cursive;
+
+}
+.home .home-container .home-content  .name-text{
+    color: aqua;
+    font-size: 45px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+
+}
+.home .home-container .home-content  a{
+    display: inline-block;
+    background: #31087B;
+    color: #fff;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+
+}
+.home .home-content a:hover {
+    color: crimson;
+    background: none;
+}
+
+
+/*about section styling*/
+
+.about{
+    width: 100%;
+    margin:0;
+    padding: 80px 0;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+}
+.about .title::before{
+    background: black;
+
+
+}
+
+.about .title::after{
+    background: #fff;
+    content: "Who I am";
+
+}
+.about .about-container .about-content{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.about .about-container .about-content img{
+    height: 500px;
+    width: 500px;
+    border-radius: 25px;
+}
+.about .about-container .about-content .about-text{
+    width: 550px;
+
+}
+
+.about .about-container .about-content .about-text h3{
+    font-size: 25px;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'ubuntu', sans-serif;
+    margin-bottom: 25px;
+
+}
+.about .about-container .about-content .about-text p{
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'ubuntu', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 65px;
+
+}
+.about .about-container .about-content  a{
+    display: inline-block;
+    background: #31087B;
+    color: #fff;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+
+}
+.about .about-content a:hover {
+    color: crimson;
+    background: none;
+    cursor: pointer;
+}
+
+
+/*skills section styling */
+.skills{
+    width: 100%;
+    margin:0;
+    padding: 80px 0;
+    background-color: #31087B;
+    color: white;
+    box-sizing: border-box;
+}
+.skills .title::before{
+    background: white;
+
+
+}
+
+.skills .title::after{
+    background: #31087B ;
+    content: "My skillsets";
+
+}
+.skills .skills-container .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto 25px;
+}
+.skills .skills-container .skill-card{
+    width: calc(33% - 20px);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-container .skill-card:hover{
+    background: crimson;
+    transform: scale(1.05)
+}
+.skills .skills-container .skill-card .skill-box {
+    transition: all 0.3s ease;
+}
+.skills .skills-container .skill-card .skill-box i{
+    margin-bottom: 10px;
+
+}
+.skills .skills-container .skill-card .skill-box i:hover{
+    color: white;
+
+}
+
+.skills .skills-container .skill-card .skill-box .text{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'ubuntu', sans-serif;
+    margin-bottom: 25px;
+
+}
+
+.skills .skills-container .skill-card .skill-box .text:hover, .skills .skills-container .skill-card .skill-box p:hover {
+    color: white;
+
+}
+
+.skills .skills-container .skill-card .skill-box p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'ubuntu', sans-serif;
+
+}
+
+.skills .skills-container .technical-skills-tools{
+    margin: 50px;
+}
+.skills .skills-container .technical-skills-tools .skill-text{
+    margin: 30px;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+
+}
+.skills .skills-container .technical-skills-tools .skill-text:hover{
+    color: crimson;
+}
+.skills .skills-container .technical-skills-tools .technical-skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin: 20px 25px;
+
+}
+.skills .skills-container .technical-skills-tools .technical-skills .skill{
+    width: calc(20% - 20px);
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
+
+}
+.skills .skills-container .technical-skills-tools .technical-skills .skill:hover{
+    transform: scale(1.05)
+
+
+}
+.skills .skills-container .technical-skills-tools .tools .languages .language img,
+.skills .skills-container .technical-skills-tools .tools .frameworks .framework img,
+.skills .skills-container .technical-skills-tools .tools .frameworks .tool img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    transition:  all ease 0.6s;
+}
+.skills .skills-container .technical-skills-tools .tools .languages .language img:hover,
+.skills .skills-container .technical-skills-tools .tools .frameworks .framework img:hover,
+.skills .skills-container .technical-skills-tools .tools .frameworks .tool img:hover{
+    transform: scale(1.2);
+}
+.skills .skills-container .technical-skills-tools .tools .text{
+    margin: 30px;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    text-align: left;
+    text-decoration: underline;
+
+}
+.skills .skills-container .technical-skills-tools .tools .languages, .skills .skills-container .technical-skills-tools .tools .frameworks   {
+    display: flex;
+    align-content: center;
+    margin: 20px 25px;
+
+}
+
+/*projects section styling*/
+.projects{
+    width: 100%;
+    margin:0;
+    padding: 80px 0;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+}
+.projects .title::before{
+    background: crimson;
+
+
+}
+
+.projects .title::after{
+    background: white;
+    content: "Who I am";
+
+}
+.projects .projects-container .projects-content{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.about .about-container .about-content img{
+    height: 500px;
+    width: 500px;
+    border-radius: 25px;
+}
+.about .about-container .about-content .about-text{
+    width: 550px;
+
+}
+
+.about .about-container .about-content .about-text h3{
+    font-size: 25px;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'ubuntu', sans-serif;
+    margin-bottom: 25px;
+
+}
+.about .about-container .about-content .about-text p{
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'ubuntu', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 65px;
+
+}
+.about .about-container .about-content  a{
+    display: inline-block;
+    background: #31087B;
+    color: #fff;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+
+}
+.about .about-content a:hover {
+    color: crimson;
+    background: none;
+    cursor: pointer;
+}
+
+
+/*projects section styling */
+
+
+
+/* contact section styling */
+.contact{
+    width: 100%;
+    margin:0;
+    padding: 80px 0;
+    background-color: #31087B;
+    color: white;
+    box-sizing: border-box;
+}
+
+.contact .title::before{
+    background: white;
+
+
+}
+
+.contact .title::after{
+    background: #31087B ;
+    content: "I am active on:)";
+
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-size: 20px;
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+.contact .contact-content .right .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: crimson;
+    margin: 30px;
+}
+.contact .contact-content .right a{
+    background: crimson;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 30px;
+    margin: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+
+}
+
+.contact .contact-content .right a:hover{
+    color: crimson;
+    background: none;
+
+}
+/* footer section styling */
+
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
